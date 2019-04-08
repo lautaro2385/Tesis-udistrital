@@ -1,0 +1,56 @@
+\input{EncabezadoTesisMSc}
+%\includeonly{Kap1/Kap1,Kap2/Kap2}
+\begin{document}
+\include{HojaTitulo/Portada}
+\include{HojaTitulo/Contraportada}
+
+\renewcommand{\tablename}{\textbf{Tabla}}
+\renewcommand{\figurename}{\textbf{Figura}}
+\renewcommand{\listtablename}{Lista de Tablas}
+\renewcommand{\listfigurename}{Lista de Figuras}
+\renewcommand{\contentsname}{Contenido}
+
+
+%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+\tableofcontents
+%\include{Resumen}
+%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+\include{Introduccion/Introduccion}
+\part{CONTEXTUALIZACIÓN DE LA INVESTIGACIÓN}
+\chapter{DESCRIPCIÓN DE LA INVESTIGACIÓN}
+%\include{contextualizacion/titulo}
+\include{contextualizacion/problema}
+\include{contextualizacion/Objetivos}
+\include{contextualizacion/Justificacion}
+\include{contextualizacion/Hipotesis}
+\include{contextualizacion/MarcoReferencial/MarcoReferencial}
+\include{contextualizacion/Metodologia}
+\include{contextualizacion/Organizacion}
+%\include{contextualizacion/EstudioSistemasPrevios}
+%\include{Anexos/Anexos}
+
+\part{DESARROLLO DE LA INVESTIGACIÓN}
+
+\chapter{Recolección y ordenamiento de la información}
+\include{Desarrollo/RecoleccionInformacion/RecoleccionInformacion}
+
+\chapter{Fases del diseño del prototipo}
+\include{Desarrollo/ArquitecturaEmpresarial/ArquitecturaEmpresarial}
+\include{Desarrollo/HistoriasUsuario/HistoriasUsuario}
+\include{Desarrollo/ModeloDatos/ModeloDatos}
+\include{Desarrollo/Interfaces/Interfaces}
+
+\chapter{Desarrollo de funcionalidades del prototipo}
+
+\part{ CIERRE DEL PROYECTO}
+\chapter{Resultados}
+\chapter{Conclusiones}
+\chapter{Prospectiva del trabajo de grado}
+\chapter{Líneas de investigación futuras}
+\chapter{Trabajos de Investigación futuros}
+
+\include{Bibliografia/Bibliografia}
+%\addcontentsline{toc}{chapter}{\numberline{}Bibliograf\'{\i}a}
+%\bibliographystyle{plaindin_esp}
+%\bibliography{biblo}
+\end{document}
