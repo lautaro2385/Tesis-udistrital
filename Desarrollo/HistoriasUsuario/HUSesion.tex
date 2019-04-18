@@ -1,0 +1,209 @@
+\subsection{SYS-APP-001: Registro}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+%\noindent \begin{tabular}{|l|l|}
+\noindent \begin{tabular}{|p{0.6\textwidth}|p{0.6\textwidth}|}
+\hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Módulo}}                 & {\color[HTML]{FFFFFF} \textbf{Submódulo:}}            \\ \hline
+Sistema                                            & Sesión                                          \\ \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
+\multicolumn{2}{|l|}{Yo como usuario sin registrar deseo registrarme en el sistema para empezar a disfrutar de las opciones del sistema}                                                                    \\ \hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
+
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep, after=0em]
+    \item Nombre
+    \item Apellido
+    \item Email
+    \item Contraseña
+    \item Tipo de cuenta: músico o contratante
+\end{itemize}
+                                          &                                         \\ \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Criterios de aceptación}}} \\ \hline
+\multicolumn{2}{|p{\textwidth}|}{
+
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item \textbf{Escenario 1:} El usuario está registrado.
+    \vspace{-0.5\baselineskip}
+    \begin{itemize}[noitemsep]
+        \item mostrar un mensaje que indique que el usuario ya está registrado.
+    \end{itemize}
+    \item \textbf{Escenario 2:} El usuario no está registrado.
+    \vspace{-0.5\baselineskip}
+    \begin{itemize}[noitemsep]
+        \item mostrar un mensaje de registro exitoso.
+    \end{itemize}
+\end{itemize}
+
+}                                                                    \\ \hline
+\end{tabular}%
+}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{SYS-APP-002: Login}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+%\noindent \begin{tabular}{|l|l|}
+\noindent \begin{tabular}{|p{0.6\textwidth}|p{0.6\textwidth}|}
+\hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Módulo}}                 & {\color[HTML]{FFFFFF} \textbf{Submódulo:}}            \\ \hline
+Sistema                                            & Sesión                                          \\ \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
+\multicolumn{2}{|l|}{Yo como usuario registrado deseo hacer login en el sistema para ingresar a las opciones del sistema}                                                                    \\ \hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item Email
+    \item Contraseña
+\end{itemize} & \\  \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Criterios de aceptación}}} \\ \hline
+\multicolumn{2}{|p{\textwidth}|}{
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item \textbf{Escenario 1:} Usuario no registrado.
+    \vspace{-0.5\baselineskip}
+    \begin{itemize}[noitemsep]
+        \item Mostrar mensaje de usuario no registrado
+        \item Invitar al usuario a registrarse
+    \end{itemize}
+    \item \textbf{Escenario 2:} La contraseña o el mail no coincide.
+    \vspace{-0.5\baselineskip}
+    \begin{itemize}[noitemsep]
+        \item Mostrar mensaje de error de usuario y/o contraseña.
+    \end{itemize}
+    \item \textbf{Escenario 3:} Login exitoso.
+    \vspace{-0.5\baselineskip}
+    \begin{itemize}[noitemsep]
+        \item Direccionar al usuario a GOTO.
+    \end{itemize}
+    \item \textbf{Escenario 4:} Error de red.
+    \vspace{-0.5\baselineskip}
+    \begin{itemize}[noitemsep]
+        \item Mostrar mensaje de error de red, que revise las conexiones a internet.
+    \end{itemize}
+\end{itemize} 
+} \\ \hline
+\end{tabular}%
+}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{SYS-APP-003: Cerrar Sesión}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+%\noindent \begin{tabular}{|l|l|}
+\noindent \begin{tabular}{|p{0.6\textwidth}|p{0.6\textwidth}|}
+\hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Módulo}}                 & {\color[HTML]{FFFFFF} \textbf{Submódulo:}}            \\ \hline
+Sistema                                            & Sesión                                          \\ \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
+\multicolumn{2}{|l|}{
+Yo como usuario con login deseo cerrar sesión para no tener acceso a mis datos
+}                                                                    \\ \hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
+ & \\  \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Criterios de aceptación}}} \\ \hline
+\multicolumn{2}{|p{\textwidth}|}{
+} \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{SYS-APP-004: Mi perfil
+}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+%\noindent \begin{tabular}{|l|l|}
+\noindent \begin{tabular}{|p{0.6\textwidth}|p{0.6\textwidth}|}
+\hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Módulo}}                 & {\color[HTML]{FFFFFF} \textbf{Submódulo:}}            \\ \hline
+Sistema                                            & USuario                                          \\ \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
+\multicolumn{2}{|l|}{Yo como usuario con login deseo ver la información de mi perfil }                                                                    \\ \hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item Id Usuario
+\end{itemize} & 
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item Nombre
+    \item Apellido
+    \item Correo
+    \item Foto
+\end{itemize} \\  \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Criterios de aceptación}}} \\ \hline
+\multicolumn{2}{|p{\textwidth}|}{} \\ \hline
+\end{tabular}%
+}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{SYS-APP-005: Cambiar Contraseña con login}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+%\noindent \begin{tabular}{|l|l|}
+\noindent \begin{tabular}{|p{0.6\textwidth}|p{0.6\textwidth}|}
+\hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Módulo}}                 & {\color[HTML]{FFFFFF} \textbf{Submódulo:}}            \\ \hline
+Sistema                                            & Usuario                                          \\ \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
+\multicolumn{2}{|l|}{
+Yo como usuario con login deseo cambiar mi contraseña
+}                                                                    \\ \hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item Contraseña actual
+    \item Contraseña nueva
+\end{itemize} & \\  \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Criterios de aceptación}}} \\ \hline
+\multicolumn{2}{|p{\textwidth}|}{
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item \textbf{Escenario 1:}  La contraseña actual no coincide.
+    \vspace{-0.5\baselineskip}
+    \begin{itemize}[noitemsep]
+        \item Mostrar mensaje de contraseña inválida
+    \end{itemize}
+    \item \textbf{Escenario 2:} La contraseña actual es igual a la nueva.
+    \vspace{-0.5\baselineskip}
+    \begin{itemize}[noitemsep]
+        \item Mostrar mensaje de error, la contraseña nueva no puede ser igual a la actual.
+    \end{itemize}
+    \item \textbf{Escenario 3:} Cambio exitoso.
+    \vspace{-0.5\baselineskip}
+    \begin{itemize}[noitemsep]
+        \item Mostrar mensaje de cambio exitoso
+        \item Direccionar al usuario a la vista principal.
+    \end{itemize}
+\end{itemize} 
+} \\ \hline
+\end{tabular}%
+}
+\end{table}
