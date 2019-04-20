@@ -183,3 +183,86 @@ Sistema                                            & Músico                    
 }
 \end{table}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{SYS-APP-MSC-006: Músico: Ver reservas realizadas por los usuarios}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+%\noindent \begin{tabular}{|l|l|}
+\noindent \begin{tabular}{|p{0.6\textwidth}|p{0.6\textwidth}|}
+\hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Módulo}}                 & {\color[HTML]{FFFFFF} \textbf{Submódulo:}}            \\ \hline
+Sistema                                            & Músico                                          \\ \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
+\multicolumn{2}{|l|}{Yo como músico deseo ver todas las reservas que han realizado los usuarios del sistema.}                                                                    \\ \hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item id Músico
+\end{itemize}
+&  
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item Lista
+    \vspace{-0.5\baselineskip}
+    \begin{itemize}[noitemsep]
+        \item Usuario
+        \item Fecha Inicio
+        \item Fecha Fin
+        \item Estado
+    \end{itemize}
+\end{itemize}\\  \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Criterios de aceptación}}} \\ \hline
+\multicolumn{2}{|p{\textwidth}|}{
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item Deben ir organizados del más reciente al más antiguo
+    \item Se debe listar paginados
+    \item Al seleccionar in ítem ir a \hyperref[HU:SYS-APP-MSC-007]{SYS-APP-MSC-007}
+\end{itemize}
+} \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{SYS-APP-MSC-007: Músico: Ver el detalle de una reserva realizadas por los usuarios}
+\label{HU:SYS-APP-MSC-007}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+%\noindent \begin{tabular}{|l|l|}
+\noindent \begin{tabular}{|p{0.6\textwidth}|p{0.6\textwidth}|}
+\hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Módulo}}                 & {\color[HTML]{FFFFFF} \textbf{Submódulo:}}            \\ \hline
+Sistema                                            & Músico                                          \\ \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
+\multicolumn{2}{|l|}{Yo como músico deseo ver el detalle de una reserva realizada por un usuario.}                                                                    \\ \hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item id reserva
+\end{itemize}
+&  
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item Usuario
+    \item Dirección
+    \item Observaciones
+    \item Fecha Inicio
+    \item Fecha Fin
+    \item Estado
+\end{itemize}\\  \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Criterios de aceptación}}} \\ \hline
+\multicolumn{2}{|p{\textwidth}|}{} \\ \hline
+\end{tabular}%
+}
+\end{table}
