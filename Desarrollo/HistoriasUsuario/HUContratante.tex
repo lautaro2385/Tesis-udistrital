@@ -12,7 +12,7 @@ Sistema                                            & Usuario                    
 \rowcolor[HTML]{365F91} 
 \multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
 \multicolumn{2}{|l|}{
-Yo como contratante con login deseo ver los músicos disponibles y activos en la app para poder contactarlo
+Yo como contratante deseo ver los músicos disponibles y activos en la app para poder contactarlo
 }                                                                    \\ \hline
 \rowcolor[HTML]{365F91} 
 {\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
@@ -60,7 +60,7 @@ Sistema                                            & Usuario                    
 \rowcolor[HTML]{365F91} 
 \multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
 \multicolumn{2}{|l|}{
-Yo como contratante con login deseo ver el detalle de un músico para contactar
+Yo como contratante deseo ver el detalle de un músico para contactar
 }                                                                    \\ \hline
 \rowcolor[HTML]{365F91} 
 {\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
@@ -99,7 +99,7 @@ Sistema                                            & Usuario                    
 \rowcolor[HTML]{365F91} 
 \multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
 \multicolumn{2}{|l|}{
-Yo como contratante con login deseo ver los comentarios realizados a un músico en específico}                                                                    \\ \hline
+Yo como contratante deseo ver los comentarios realizados a un músico en específico}                                                                    \\ \hline
 \rowcolor[HTML]{365F91} 
 {\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
 & 
@@ -137,13 +137,16 @@ Sistema                                            & Usuario                    
 \rowcolor[HTML]{365F91} 
 \multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
 \multicolumn{2}{|l|}{
-Yo como contratante con login deseo reservar los servicios de un músico}                                                                    \\ \hline
+Yo como contratante deseo reservar los servicios de un músico}                                                                    \\ \hline
 \rowcolor[HTML]{365F91} 
 {\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
 \vspace{-\baselineskip}
 \begin{itemize}[noitemsep]
     \item Fecha Inicio
     \item Fecha Fin
+    \item Dirección
+    \item Observaciones
+    \item Tipo Contratación
 \end{itemize}
 & 
 \\  \hline
@@ -164,6 +167,91 @@ Yo como contratante con login deseo reservar los servicios de un músico}       
     \end{itemize}
 \end{itemize}
 } \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{SYS-APP-CNT-005: Contratante: Ver reservas músico}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+%\noindent \begin{tabular}{|l|l|}
+\noindent \begin{tabular}{|p{0.6\textwidth}|p{0.6\textwidth}|}
+\hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Módulo}}                 & {\color[HTML]{FFFFFF} \textbf{Submódulo:}}            \\ \hline
+Sistema                                            & Usuario                                          \\ \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
+\multicolumn{2}{|l|}{Yo como contratante deseo ver reservas realizadas}                                                                    \\ \hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item id Usuario
+\end{itemize}
+& 
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item Lista
+    \vspace{-0.5\baselineskip}
+    \begin{itemize}[noitemsep]
+        \item Nombre grupo
+        \item Fecha inicio
+        \item Fecha Fin
+        \item Valor
+    \end{itemize}
+\end{itemize}
+\\  \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Criterios de aceptación}}} \\ \hline
+\multicolumn{2}{|p{\textwidth}|}{
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item Estar organizados por el más reciente primero.
+    \item Al selecciona un ítem de la lista ir a \hyperref[HU:SYS-APP-CNT-006]{SYS-APP-CNT-006} 
+\end{itemize}
+} \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{SYS-APP-CNT-006: Contratante: Ver detalle de reserva músico}
+\label{HU:SYS-APP-CNT-006}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+%\noindent \begin{tabular}{|l|l|}
+\noindent \begin{tabular}{|p{0.6\textwidth}|p{0.6\textwidth}|}
+\hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Módulo}}                 & {\color[HTML]{FFFFFF} \textbf{Submódulo:}}            \\ \hline
+Sistema                                            & Usuario                                          \\ \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Texto Descriptivo}}}       \\ \hline
+\multicolumn{2}{|l|}{
+Yo como contratante deseo ver el detalle de una reserva realizada
+}                                                                    \\ \hline
+\rowcolor[HTML]{365F91} 
+{\color[HTML]{FFFFFF} \textbf{Datos de Entrada}}       & {\color[HTML]{FFFFFF} \textbf{Datos de Salida}}       \\ \hline
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item id reserva
+\end{itemize}
+& 
+\vspace{-\baselineskip}
+\begin{itemize}[noitemsep]
+    \item Nombre grupo
+    \item Fecha inicio
+    \item Fecha Fin
+    \item Valor
+\end{itemize}
+\\  \hline
+\rowcolor[HTML]{365F91} 
+\multicolumn{2}{|l|}{\cellcolor[HTML]{365F91}{\color[HTML]{FFFFFF} \textbf{Criterios de aceptación}}} \\ \hline
+\multicolumn{2}{|p{\textwidth}|}{} \\ \hline
 \end{tabular}%
 }
 \end{table}
