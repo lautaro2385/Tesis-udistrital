@@ -14,6 +14,7 @@
 
 %\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
 \tableofcontents
+\listoffigures
 %\include{Resumen}
 %\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
 \include{Introduccion/Introduccion}
@@ -39,16 +40,39 @@
 \include{Desarrollo/ArquitecturaEmpresarial/ArquitecturaEmpresarial}
 \include{Desarrollo/HistoriasUsuario/HistoriasUsuario}
 \include{Desarrollo/ModeloDatos/ModeloDatos}
-\include{Desarrollo/Interfaces/Interfaces}
+\include{Desarrollo/Interfaces/Mockup/Interfaces}
 
 \chapter{Desarrollo de funcionalidades del prototipo}
+\include{Desarrollo/Interfaces/Interfaces/Interfaces}
+\include{Desarrollo/Arquitectura/Arquitectura}
 
 \part{ CIERRE DEL PROYECTO}
+
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
 \chapter{Resultados}
+\include{Cierre/Resultados}
+\endgroup
+
+\newpage
+
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
 \chapter{Conclusiones}
-\chapter{Prospectiva del trabajo de grado}
-\chapter{Líneas de investigación futuras}
-\chapter{Trabajos de Investigación futuros}
+\include{Cierre/conclusiones}
+\endgroup
+
+\newpage
+
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
+\chapter{Trabajos a Futuro}
+\include{Cierre/Futuro}
+\endgroup
+
 
 \include{Bibliografia/Bibliografia}
 %\addcontentsline{toc}{chapter}{\numberline{}Bibliograf\'{\i}a}
